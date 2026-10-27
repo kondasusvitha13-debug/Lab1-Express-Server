@@ -1,0 +1,29 @@
+GET http://localhost:3000/books/
+
+###
+GET http://localhost:3000/books/1/
+
+###
+POST http://localhost:3000/books/
+Content-Type: application/json
+
+{
+  "title": "Learning Node.js",
+  "author": "John Smith",
+  "price": 350,
+  "pages": 250
+}
+
+###
+PUT http://localhost:3000/books/1/
+Content-Type: application/json
+
+{
+  "title": "Wings of Fire - Updated",
+  "author": "A.P.J. Abdul Kalam",
+  "price": 300,
+  "pages": 220
+}
+
+###
+DELETE http://localhost:3000/books/9/
