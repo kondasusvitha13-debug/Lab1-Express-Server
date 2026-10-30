@@ -5,7 +5,7 @@ const openDB = require("./database");
 const app = express();
 app.use(express.json());
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 let db;
 
 async function initializeDBAndServer() {
@@ -47,8 +47,8 @@ async function initializeDBAndServer() {
       }
     }
 
-    app.listen(PORT, () => {
-      console.log(`Server running at http://localhost:${PORT}`);
+       app.listen(PORT, () => {
+      console.log(`Server running on port ${PORT}`);
     });
   } catch (error) {
     console.error("Database initialization failed:", error.message);
