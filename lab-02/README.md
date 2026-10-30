@@ -20,7 +20,7 @@ To develop an Express.js server connected to an SQLite database and implement CR
 - `database.js` — SQLite database connection
 - `books.db` — SQLite database file
 - `requests.http` — API requests for testing
-- `screenshots/` — Screenshots of API responses
+- `Screenshots/` — Screenshots of the database and API responses
 - `README.md` — Project documentation
 
 ## Database Details
@@ -73,7 +73,10 @@ The database is initialized with eight sample books.
 
 ## Screenshots
 
-The `screenshots/` folder contains screenshots of the API responses for the five CRUD operations.
+The `Screenshots/` folder contains a view of the SQLite database and screenshots of the five CRUD operations.
+
+## SQLITE DATABASE
+![SQLite database](Screenshots/Sqlite%20DB.png)
 
 ## GET ALL BOOKS
 ![GET ALL BOOKS](Screenshots/get-all-books.png)
