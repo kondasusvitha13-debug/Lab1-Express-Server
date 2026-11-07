@@ -133,7 +133,9 @@ The following errors were studied:
 
 Platform: Render
 
-Live URL: To be added after deployment.
+Live URL: https://lab3-books-api.onrender.com
+
+API Endpoint: https://lab3-books-api.onrender.com/books
 
 ## Result
 
