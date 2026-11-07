@@ -1,0 +1,104 @@
+
+### 1. Get all books
+GET http://localhost:3000/books
+
+### 2. Search books by title
+GET http://localhost:3000/books?search_q=Harry
+
+### 3. Sort books by price (highest to lowest)
+GET http://localhost:3000/books?order_by=price&order=DESC
+
+### 4. Pagination
+GET http://localhost:3000/books?limit=3&offset=0
+
+### 5. Filter books by price
+GET http://localhost:3000/books?min_price=200&max_price=300
+
+### 6. Get book by ID
+GET http://localhost:3000/books/1
+
+### 7. Get book with invalid ID
+GET http://localhost:3000/books/999
+
+### 8. Add a new book
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "The Secret",
+    "author": "Rhonda Byrne",
+    "price": 250,
+    "pages": 200
+}
+
+### 9. POST with missing title (400 error)
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "author": "Test Author",
+    "price": 250,
+    "pages": 200
+}
+
+### 10. POST with invalid price (400 error)
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "Test Book",
+    "author": "Test Author",
+    "price": "abc",
+    "pages": 200
+}
+
+### 11. Update an existing book
+PUT http://localhost:3000/books/10
+Content-Type: application/json
+
+{
+    "title": "The Secret - Updated",
+    "author": "Rhonda Byrne",
+    "price": 300,
+    "pages": 250
+}
+
+### 12. Update book with invalid ID
+PUT http://localhost:3000/books/999
+Content-Type: application/json
+
+{
+    "title": "Test Book",
+    "author": "Test Author",
+    "price": 200,
+    "pages": 150
+}
+
+### 13. Delete an existing book
+DELETE http://localhost:3000/books/10
+
+### 14. Delete book with invalid ID
+DELETE http://localhost:3000/books/999
+
+### 15. Invalid sorting order
+GET http://localhost:3000/books?order=INVALID
+
+### 16. Invalid limit
+GET http://localhost:3000/books?limit=-5
+
+### 17. Invalid price range
+GET http://localhost:3000/books?min_price=500&max_price=200
+
+### 18. Invalid sorting column
+GET http://localhost:3000/books?order_by=invalid
+
+### 19. POST with missing author
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "Sample Book",
+    "price": 200,
+    "pages": 150
+}
+
