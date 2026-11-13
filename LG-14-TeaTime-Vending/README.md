@@ -90,3 +90,21 @@ The API was tested using the VS Code terminal.
 - Chandu
 - Vinay Vardhan
 - Madhukar
+
+## Submission Details
+
+- Assignment: LG-14 – TeaTime Vending
+- Group: 14
+- Backend: Node.js and Express.js
+- Database: SQLite
+- API Testing: Postman Collection
+
+## Team Contributions
+
+| Member | Responsibility |
+|---|---|
+| Hasya | Server setup and routes |
+| Susvitha | Database setup |
+| Chandu | REST API endpoints |
+| Vinay Vardhan | Validation and search |
+| Madhukar | Audit trail, Postman testing and README |
