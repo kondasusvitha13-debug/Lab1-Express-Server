@@ -77,6 +77,13 @@ API requests are included in `TeaTime-Vending.postman_collection.json`.
 
 The API was tested using the VS Code terminal.
 
+### Expected Status Codes
+- 200 OK - Successful GET and PUT requests
+- 201 Created - Machine successfully added
+- 400 Bad Request - Invalid input
+- 404 Not Found - Requested record does not exist
+- 500 Internal Server Error - Server or database error
+
 ## Team Members
 - Hasya
 - Susvitha
